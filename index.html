@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Social Media Usage Survey</h2>
+        <div class="form-wrapper">
+            <form id="surveyForm" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">1. What is your name?</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">2. What is your email address?</label>
+                    <input type="text" name="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group gender">
+                    <label>3. What is your gender?</label>
+                    <div class="genderDiv">
+                        <input type="radio" name="gender" id="male"><label for="male">Male</label>
+                        <input type="radio" name="gender" id="female"><label for="female">Female</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="socialMedia">4. Which social media platforms do you use?</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" name="socialMedia" id="facebook"><label for="facebook">Facebook</label>
+                        <input type="checkbox" name="socialMedia" id="instagram"><label for="instagram">Instagram</label>
+                        <input type="checkbox" name="socialMedia" id="twitter"><label for="twitter">Twitter</label>
+                        <input type="checkbox" name="socialMedia" id="linkedin"><label for="linkedin">LinkedIn</label>
+                        <input type="checkbox" name="socialMedia" id="other"><label for="other">Other</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="hear">5. How did you learn about this survey?</label>
+                    <select id="hear" name="hear">
+                        <option value="friend">Friend</option>
+                        <option value="socialMedia">Social Media</option>
+                        <option value="website">Website</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group flex">
+                    <label for="recommend">6. Would you recommend this survey to your friends?</label>
+                    <div class="recommendation">
+                        <input type="radio" name="recommend" id="yes"><label for="yes">Yes</label>
+                        <input type="radio" name="recommend" id="no"><label for="no">No</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="favoritePlatform">7. What is your favorite social media platform?</label>
+                    <input type="text" name="favoritePlatform" id="favoritePlatform" placeholder="Enter your favorite platform">
+                </div>
+                <div class="form-group">
+                    <label for="frequency">8. How often do you use social media per day?</label>
+                    <input type="number" name="frequency" id="frequency" placeholder="Enter the number of times">
+                </div>
+                <div class="form-group">
+                    <label for="contentPreference">9. What type of content do you prefer on social media?</label>
+                    <textarea name="contentPreference" id="contentPreference" placeholder="Your preferences..." cols="30" rows="5"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="privacyConcerns">10. Do you have concerns about privacy on social media?</label>
+                    <select id="privacyConcerns" name="privacyConcerns">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <button type="button" onclick="submitForm()">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function submitForm() {
+            // You can add form validation or other processing logic here
+            alert('Form submitted successfully!');
+        }
+    </script>
+
+</body>
+</html>
+
